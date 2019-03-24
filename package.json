@@ -1,0 +1,34 @@
+{
+  "name": "coinlore-crypto-prices",
+  "version": "0.1.0",
+  "description": "Cryptocurrency prices - CoinLore",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coinlore/NodeJS-Client-For-CoinLore-API.git"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "api",
+    "bitcoin",
+    "ethereum",
+    "xrp",
+    "litecoin",
+    "coinlore",
+    "crypto",
+    "cryptocurrency",
+    "prices"
+  ],
+  "author": "CoinLore <contact@coinlore.com> (https://www.coinlore.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coinlore/NodeJS-Client-For-CoinLore-API/issues"
+  },
+  "homepage": "https://github.com/coinlore/NodeJS-Client-For-CoinLore-API#readme",
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  }
+}
