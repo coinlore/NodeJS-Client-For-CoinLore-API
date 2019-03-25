@@ -1,14 +1,46 @@
 'use strict';
 
-const fetch = require('node-fetch')
-const BASE = 'https://api.coinlore.com/'
+const fetch = require('node-fetch');
+const BASE = 'https://api.coinlore.com/';
 
 class Coinlore {
     /*
     * Get information for specific coin by ID
+    * $ID = Coin ID
     * */
     getTicker(ID) {
         return this.makeRequest(BASE + '/api/ticker/?id=' + ID)
+    }
+
+    /*
+    * Get markets by coin ID
+    * $ID = Coin ID
+    * */
+    getMarkets(ID) {
+        return this.makeRequest(BASE + '/api/coin/markets/?id=' + ID)
+    }
+
+    /*
+    * Get all exchanges
+    * */
+    getExchanges() {
+        return this.makeRequest(BASE + '/api/exchanges/')
+    }
+
+    /*
+    * Get exchange by exchange ID
+    * $id = exchange ID
+    * */
+    getExchange(ID) {
+        return this.makeRequest(BASE + '/api/exchange/?id=' + ID)
+    }
+
+    /*
+    * Get social stats for coin
+    * $ID  = Coin ID
+    * */
+    getSocial(ID) {
+        return this.makeRequest(BASE + '/api/coin/social_stats/?id=' + ID)
     }
 
     /*
@@ -34,4 +66,4 @@ class Coinlore {
     }
 }
 
-module.exports = Coinlore
+module.exports = Coinlore;
