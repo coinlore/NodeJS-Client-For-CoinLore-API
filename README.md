@@ -17,6 +17,9 @@ const Coinlore = require('@coinlore/coinlore-crypto-prices');
 
 const coinlore_client = new Coinlore();
 
+//Get global market data
+coinlore_client.getGlobal().then(console.log).catch(console.error);
+
 //Get first 100 coins
 coinlore_client.getTickers(0,100).then(console.log).catch(console.error);
 

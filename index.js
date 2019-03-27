@@ -5,6 +5,13 @@ const BASE = 'https://api.coinlore.com/';
 
 class Coinlore {
     /*
+    * Get global market data
+    * */
+    getGlobal(ID) {
+        return this.makeRequest(BASE + '/api/global')
+    }
+
+    /*
     * Get information for specific coin by ID
     * $ID = Coin ID
     * */

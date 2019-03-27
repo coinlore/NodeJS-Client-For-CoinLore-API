@@ -1,6 +1,6 @@
 {
   "name": "coinlore-crypto-prices",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cryptocurrency prices - CoinLore",
   "main": "index.js",
   "scripts": {
